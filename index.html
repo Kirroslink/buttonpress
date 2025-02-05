@@ -21,7 +21,7 @@
         const statusText = document.getElementById("statusText");
 
         async function fetchStatus() {
-            const response = await fetch("http://buttonpress.free.nf/update.php");
+            const response = await fetch("http://buttonpress.free.nf/status.php");
             const data = await response.json();
             updateUI(data.status);
         }
